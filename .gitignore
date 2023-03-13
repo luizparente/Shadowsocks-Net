@@ -338,3 +338,4 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/Shadowsocks-Net/Minimal/Shadowsocks-Minimal-CrossPlatform-Local/Properties/launchSettings.json

@@ -30,16 +30,4 @@
     <ProjectReference Include="..\..\Shadowsocks\Shadowsocks.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="app-config.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="nlog.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="servers.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>
