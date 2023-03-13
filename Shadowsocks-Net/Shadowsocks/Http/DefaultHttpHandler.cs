@@ -65,7 +65,7 @@ namespace Shadowsocks.Http
                    out HttpProxyHeaderResolver.Verb httpVerb, out Uri targetHost, out byte[] normalHttpRequestHeader))
                 {
                     //_logger?.LogInformation($"HttpRoxyServer Verb={httpVerb.ToString()}.");
-                    var server = _serverLoader.Load(null);
+                    var server = _serverLoader.Load();
                     if (null == server)
                     {
                         _logger?.LogInformation($"HttpRoxyServer Proxy server not found.");

@@ -48,7 +48,7 @@ namespace Shadowsocks.Infrastructure.Pipe
         {
             var received = SmartBuffer.Rent(_bufferSize);
             received.SignificantLength = await Client.ReadAsync(received.Memory, cancellationToken);
-            _logger?.LogInformation($"PipeReader Received {received.SignificantLength} bytes from [{Client.EndPoint.ToString()}].");
+            _logger?.LogInformation($"PipeReader Received {received.SignificantLength} bytes from [{Client.EndPoint?.ToString()}].");
 
             if (0 >= received.SignificantLength)
             {

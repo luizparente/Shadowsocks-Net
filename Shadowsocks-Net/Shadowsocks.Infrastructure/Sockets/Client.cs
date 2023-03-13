@@ -16,7 +16,7 @@ namespace Shadowsocks.Infrastructure.Sockets
 {
     public abstract class Client : IClient
     {
-        public virtual IPEndPoint EndPoint => _sock.RemoteEndPoint as IPEndPoint;
+        public virtual IPEndPoint EndPoint => _sock?.RemoteEndPoint as IPEndPoint;
         public virtual IPEndPoint LocalEndPoint => _sock.LocalEndPoint as IPEndPoint;
 
         public event EventHandler<ClientEventArgs> Closing;

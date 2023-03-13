@@ -115,7 +115,7 @@ namespace Shadowsocks.Local
                 {
                     case 0x1://connect //TODO validate addr                             
                         {
-                            var server = _serverLoader.Load(null);
+                            var server = _serverLoader.Load();
                             if (null == server)
                             {
                                 _logger?.LogInformation($"proxy server not found.");
@@ -202,7 +202,7 @@ namespace Shadowsocks.Local
 
             //authentication //TODO udp assoc
 
-            var server = _serverLoader.Load(null);
+            var server = _serverLoader.Load();
             if (null == server)
             {
                 _logger?.LogInformation($"proxy server not found.");

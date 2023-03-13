@@ -22,6 +22,6 @@ namespace Shadowsocks.Local
 {
     public interface IServerLoader
     {
-        Server Load(EndPoint target = null);
+        Server Load();
     }
 }

@@ -33,7 +33,7 @@ namespace Shadowsocks_Minimal_Crossplatform_Local
         {
         }
 
-        public Server Load(EndPoint target = null)
+        public Server Load()
         {
             if (null == _servers || 0 == _servers.Count)
             {
